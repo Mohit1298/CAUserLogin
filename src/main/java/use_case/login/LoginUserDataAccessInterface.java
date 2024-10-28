@@ -5,6 +5,7 @@ import entity.User;
 /**
  * DAO for the Login Use Case.
  */
+
 public interface LoginUserDataAccessInterface {
 
     /**
@@ -32,4 +33,10 @@ public interface LoginUserDataAccessInterface {
      * @param name username
      */
     void setCurrentUser(String name);
+
+    /**
+     * Gets the current user.
+     * @return the current user
+     */
+    String getCurrentUser();
 }
